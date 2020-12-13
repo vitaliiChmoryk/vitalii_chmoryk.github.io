@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-top: 0;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 600px;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.projects {
+    display: flex;
+}

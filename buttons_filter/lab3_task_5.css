@@ -1,0 +1,61 @@
+* {
+    padding: 5px;
+}
+[for = "red"] {
+    color: red;
+    text-decoration: underline;
+}
+
+[for = "green"] {
+    color: green;
+    text-decoration: underline;
+}
+
+[for = "blue"] {
+    color: blue;
+    text-decoration: underline;
+}
+
+input, span {
+    display: none;
+}
+
+input#red:checked ~ [for = "red"] {
+    opacity: 0.3;
+}
+
+input#red:checked ~ .red {
+    display: inline-block;
+    color: white;
+    background-color: red;
+    border: 1px red;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+input#green:checked ~ [for = "green"] {
+    opacity: 0.3;
+}
+
+input#green:checked ~ .green {
+    display: inline-block;
+    color: white;
+    background-color: green;
+    border: 1px red;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+input#blue:checked ~ [for = "blue"] {
+    opacity: 0.3;
+}
+
+input#blue:checked ~ .blue {
+    display: inline-block;
+    color: white;
+    background-color: blue;
+    border: 1px red;
+    border-radius: 5px;
+    font-weight: bold;
+}
+

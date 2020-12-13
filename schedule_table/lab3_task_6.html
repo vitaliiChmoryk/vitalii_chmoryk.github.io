@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="lab3_task_6.css">
+</head>
+<body>
+    <p>Дні роботи</p>
+    <input type="radio" name="days" id="all_day" checked>
+    <label for="all_day">Всі</label>
+    <input type="radio" name="days" id="weekdays">
+    <label for="weekdays">Будні</label>
+    <input type="radio" name="days" id="weekend">
+    <label for="weekend">Вихідні</label>
+
+    <p>Частина дня</p>
+    <input type="radio" name="half" id="all" checked>
+    <label for="all">Всі</label>
+    <input type="radio" name="half" id="first_half">
+    <label for="first_half">Перша</label>
+    <input type="radio" name="half" id="second_half">
+    <label for="second_half">Друга</label>
+
+    <p>Категорія лікаря</p>
+    <input type="radio" name="category" id="all_category" checked>
+    <label for="all_category">Всі категорії</label>
+    <input type="radio" name="category" id="first_category">
+    <label for="first_category">Перша</label>
+    <input type="radio" name="category" id="second_category">
+    <label for="second_category">Друга</label>
+    <input type="radio" name="category" id="high_category">
+    <label for="high_category">Вища</label>
+
+    <p>Пошук лікаря за спеціальністю</p>
+    <form action="">
+        <input type="search" name="specialty">
+        <button type="submit">Пошук</button>
+    </form>
+
+    <table>
+        <caption>Розклад роботи лікарів</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">Спеціальність</th>
+                    <th rowspan="2">ПІБ</th>
+                    <th rowspan="2">Кваліфікаційна<br>категорія</th>
+                    <th rowspan="2">Номер<br>кабінету</th>
+                    <th colspan="7">Години прийому</th>
+                </tr>
+                <tr>
+                    <th>пн</th>
+                    <th>вт</th>
+                    <th>ср</th>
+                    <th>чт</th>
+                    <th>пт</th>
+                    <th>сб</th>
+                    <th>нд</th>
+                </tr>
+    </thead>
+        <tr class="first_half first_category" >
+            <td>Кардіолог</td>
+            <td>Петренко О.В.</td>
+            <td>Перша</td>
+            <td>209</td>
+            <td>8:00 - 12:00</td>
+            <td>8:00 - 12:00</td>
+            <td>-</td>
+            <td>8:00 - 12:00</td>
+            <td>8:00 - 12:00</td>
+            <td>8:00 - 12:00</td>
+            <td>-</td>
+        </tr>
+        <tr class="weekdays high_category" >
+            <td>Офтальмолог</td>
+            <td>Онопрієнко Н.С.</td>
+            <td>Вища</td>
+            <td>211</td>
+            <td>8:00 - 17:00</td>
+            <td>8:00 - 17:00</td>
+            <td>8:00 - 17:00</td>
+            <td>8:00 - 16:00</td>
+            <td>8:00 - 16:00</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr class="weekdays second_half first_category" >
+            <td>Кардіолог</td>
+            <td>Висоцька О.В.</td>
+            <td>Перша</td>
+            <td>208</td>
+            <td>13:00 - 17:00</td>
+            <td>13:00 - 17:00</td>
+            <td>13:00 - 17:00</td>
+            <td>13:00 - 17:00</td>
+            <td>13:00 - 17:00</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr class="weekend first_half second_category" >
+            <td>Педіатр</td>
+            <td>Дордюк С.П.</td>
+            <td>Друга</td>
+            <td>220</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>8:00 - 12:00</td>
+            <td>8:00 - 12:00</td>
+        </tr>
+        <tr class="weekdays second_half high_category" >
+            <td>Травматолог</td>
+            <td>Прокопенко С.О.</td>
+            <td>Вища</td>
+            <td>301</td>
+            <td>13:00 - 18:00</td>
+            <td>13:00 - 18:00</td>
+            <td>13:00 - 18:00</td>
+            <td>13:00 - 18:00</td>
+            <td>13:00 - 18:00</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr class="second_category" >
+            <td>Педіатр</td>
+            <td>Степаненко О.П.</td>
+            <td>Друга</td>
+            <td>219</td>
+            <td>8:00 - 17:00</td>
+            <td>-</td>
+            <td>8:00 - 17:00</td>
+            <td>-</td>
+            <td>-</td>
+            <td>8:00 - 17:00</td>
+            <td>8:00 - 17:00</td>
+        </tr>
+        <tr class="weekdays second_half first_category" >
+            <td>Психіатр</td>
+            <td>Сергієнко Н.О.</td>
+            <td>Перша</td>
+            <td>207</td>
+            <td>13:00 - 17:00</td>
+            <td>13:00 - 17:00</td>
+            <td>13:00 - 17:00</td>
+            <td>13:00 - 17:00</td>
+            <td>13:00 - 17:00</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr class="weekend first_half high_category" >
+            <td>Психіатр</td>
+            <td>Лещенко С.В.</td>
+            <td>Вища</td>
+            <td>218</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>8:00 - 12:00</td>
+            <td>8:00 - 12:00</td>
+        </tr>
+        <tr class="weekdays first_half high_category" >
+            <td>Невропатолог</td>
+            <td>Шумейко Д.Є.</td>
+            <td>Вища</td>
+            <td>203</td>
+            <td>8:00 - 12:00</td>
+            <td>8:00 - 12:00</td>
+            <td>8:00 - 12:00</td>
+            <td>8:00 - 12:00</td>
+            <td>8:00 - 12:00</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr class="weekend first_half second_category" >
+            <td>Невропатолог</td>
+            <td>Безносюк І.В.</td>
+            <td>Друга</td>
+            <td>204</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>8:00 - 12:00</td>
+            <td>8:00 - 12:00</td>
+        </tr>
+        <tr class="first_category" >
+            <td>Дерматолог</td>
+            <td>Бабюк Є.В.</td>
+            <td>Перша</td>
+            <td>205</td>
+            <td>-</td>
+            <td>8:00 - 17:00</td>
+            <td>-</td>
+            <td>8:00 - 17:00</td>
+            <td>-</td>
+            <td>8:00 - 17:00</td>
+            <td>-</td>
+        </tr>
+        <tr class="weekend second_half second_category" >
+            <td>Травматолог</td>
+            <td>Дешко Є.І.</td>
+            <td>Друга</td>
+            <td>302</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>13:00 - 18:00</td>
+            <td>13:00 - 18:00</td>
+        </tr>
+        <tr class="weekdays first_category" >
+            <td>Оториноларинголог</td>
+            <td>Олешко Ю.С.</td>
+            <td>Перша</td>
+            <td>304</td>
+            <td>8:00 - 17:00</td>
+            <td>8:00 - 17:00</td>
+            <td>8:00 - 17:00</td>
+            <td>8:00 - 17:00</td>
+            <td>8:00 - 16:00</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr class="weekdays first_half high_category" >
+            <td>Нарколог</td>
+            <td>Романенко О.С.</td>
+            <td>Вища</td>
+            <td>308</td>
+            <td>8:00 - 12:00</td>
+            <td>-</td>
+            <td>8:00 - 12:00</td>
+            <td>-</td>
+            <td>8:00 - 12:00</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr class="weekend second_half first_category" >
+            <td>Ендокринолог</td>
+            <td>Свердлов А.І.</td>
+            <td>Перша</td>
+            <td>310</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>13:00 - 18:00</td>
+            <td>13:00 - 18:00</td>
+        </tr>
+    </table>
+    <form class="contact" action="">
+        <p>Заповніть поля:</p>
+        <input type="tel" placeholder="+380-93-540-23-17" pattern="\+380-\d{2}-\d{3}(-\d{2}){2}" required>
+        <input type="email" class="test" placeholder="Ввведіть ваш email" required>
+        <button type="submit">Надіслати дані на телефон</button>
+    </form>
+</body>
+</html>
